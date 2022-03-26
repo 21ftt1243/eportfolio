@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week7-e-p2</title>
+	<style type="text/css">
+	/*	.div1 {display: flex;
+			flex-direction: column;
+			width: 400;
+			height: 100;
+			padding: 10;
+			justify-content: center;
+			align-items: center;
+			overflow: auto;}
+
+		.div2{text-align: center;}
+
+		.div3{display: flex;flex-direction: row;align-items: right;justify-content:center;flex-flow: row wrap;}
+*/
+		form {margin: 0px auto;
+			  height: 100vh;
+			  flex-wrap: wrap;
+			  display: flex;
+			  width: 600px;}
+
+		.a {width: 400px;
+			padding: 10px;
+			box-sizing: border-box;
+		    border: none;}
+
+		.b {padding: 5px;
+			box-sizing: border-box;
+			border: none;
+			display: flex;
+			flex-grow: 1;}
+
+		.c {flex-grow: 1;}
+
+		.d {padding: 10px;
+			box-sizing: border-box;
+			border: none;
+			text-align: center;
+			flex: 100%;}
+
+		h3{text-align: center;}	
+
+
+	</style>
+</head>
+<body>
+	<div>
+ <div><h3><b>Registration for Covid-19 Volunteer - &#174 C19-Team</b></h3></div>
+    <!-- <table border="1" width="400" height="100" cellpadding="10"> -->
+
+<form method="" action="">
+
+<div class="a">Fullname</div> <div class="b"><input type="text" maxlength="30" name="Fullname" id="Fullname" class="c"><br></div>
+
+<div class="a">Email</div><div class="b"><input type="email" name="Email" id="Email" class="fcf-form-control" class="c"><br></div>
+
+<div class="a">Date you can start</div>
+<div class="b"><input type="date" name="Date" id="Date" class="c"><br></div>
+
+<div class="a">Morning shift preference</div>
+	<div class="b"><input type="time" name="Morning shift preference" id="Morning shift preference" class="c"><br></div>
+
+<div class="a">Evening shift perference</div>
+	<div class="b"><input type="time" name="Evening shift preference" id="Evening shift preference" class="c"><br></div>
+
+<div class="a">How many hours you can work? In multiple of 3</div>
+	<div class="b"><select>
+		<option value="3-9" selected></option>
+		<option value="3">	3 hours	</option>
+		<option value="6">	6 hours	</option>
+		<option value="9">	9 hours	</option>
+	</select>
+	</div>
+
+<div class="a">Distance you willing to commute to volunteer center?</div>
+	<div class="b"><label for="1">1</label><input type="range" min="1" max="15" value="3" name="Distance" id="Distance"><label for="15">15</label></div>
+
+<div class="a">You currency perference for payment?</div>
+	<div class="b"><input type="radio" name="pound" id="pound">
+		<label for="pound">&#163</label>
+		<input type="radio" name="yen" id="yen">
+		<label for="yen">&#165</label>
+		<input type="radio" name="euro" id="euro">
+		<label for="euro">&#128</label></div>
+
+<div class="d"><textarea rows="6" cols="40" placeholder="Type your home address"></textarea></div>
+
+<div class="d"><strike>You will be given daily meals</strike></div>
+
+<!--Below input elements have attribute checked-->	
+	<div class="d"><input name="conditions" type="checkbox" name="conditions" id="terms_and_conditions" disabled="disabled" checked="checked"/>I agree to all terms and conditions<br></div>
+
+	
+	<div class="d">Prove you are not robot: 10 &#60 20?<input type="checkbox" name="prove you are not robot" id="robot"></div>
+
+
+    <div class="d"><input type="submit" name="submit" value="Volunteer now!"> </div>
+ 
+    <div class="d"><input type="reset" name="start over" value="Start over"></div> 
+
+	<div class="d">For more informaton, visit MOH <a href="website" website target="_blank">website</a></div>
+
+</form>
+</div>
+
+</body>
+</html>
